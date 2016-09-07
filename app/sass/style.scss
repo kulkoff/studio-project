@@ -1,6 +1,7 @@
 @import "normalize.scss";
-@import "header.scss";
 @import "variables.scss";
+@import "mixins.scss";
+@import "header.scss";
 body{
-	background-color: #000;
+	background-color: $body-color;	
 }

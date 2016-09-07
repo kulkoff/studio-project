@@ -1,0 +1,20 @@
+@mixin clearfix(){
+	&::after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+@mixin container(){
+	width: 340px;
+	margin: 0 auto;
+		@media #{$tablet-width}{
+			width:640px;
+		}
+		@media #{$notebook-width}{
+			width: 1040px;
+		}
+		@media #{$fullhd-width}{
+			width: 1600px;
+		}
+}
