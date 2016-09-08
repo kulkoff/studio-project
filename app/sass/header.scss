@@ -20,14 +20,14 @@
 	 	@media #{$tablet-width}{
 	 		display: none;
 	 	}
-	 	}
+	 }
 }
 .promo-title{
 	outline: 2px dashed green;
-	height: 50vh;
+	height: 320px;
 }
 .promo-title__inner{
 	@include container;
-	height: 100%;
+	height: 200px;
 	outline: 2px solid yellow;
 }

@@ -403,12 +403,12 @@ th {
 
 .promo-title {
   outline: 2px dashed green;
-  height: 50vh; }
+  height: 320px; }
 
 .promo-title__inner {
   width: 340px;
   margin: 0 auto;
-  height: 100%;
+  height: 200px;
   outline: 2px solid yellow; }
   @media (min-width: 768px) {
     .promo-title__inner {
@@ -419,6 +419,107 @@ th {
   @media (min-width: 1920px) {
     .promo-title__inner {
       width: 1600px; } }
+
+.about {
+  min-height: 400px;
+  position: relative; }
+
+.logo--about-dekstop {
+  left: 48%;
+  top: 48%;
+  width: 50px;
+  height: 50px;
+  display: none; }
+  @media (min-width: 768px) {
+    .logo--about-dekstop {
+      display: block; } }
+
+.about__inner {
+  width: 340px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .about__inner {
+      width: 640px; } }
+  @media (min-width: 1366px) {
+    .about__inner {
+      width: 1040px; } }
+  @media (min-width: 1920px) {
+    .about__inner {
+      width: 1600px; } }
+
+.about__block {
+  width: 100%;
+  height: 270px;
+  outline: 1px solid #000;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-left: 1%;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .about__block {
+      width: 48%;
+      height: 200px;
+      float: left;
+      display: inline-block; } }
+
+.ourworks__inner {
+  width: 340px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .ourworks__inner {
+      width: 640px; } }
+  @media (min-width: 1366px) {
+    .ourworks__inner {
+      width: 1040px; } }
+  @media (min-width: 1920px) {
+    .ourworks__inner {
+      width: 1600px; } }
+
+.ourworks__input {
+  display: none; }
+
+.ourworks__label {
+  display: inline-block;
+  width: 46%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  text-align: center;
+  outline: 1px dashed orange;
+  cursor: pointer; }
+  @media (min-width: 1366px) {
+    .ourworks__label {
+      width: 200px; } }
+
+.offers__inner {
+  width: 340px;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .offers__inner {
+      width: 640px; } }
+  @media (min-width: 1366px) {
+    .offers__inner {
+      width: 1040px; } }
+  @media (min-width: 1920px) {
+    .offers__inner {
+      width: 1600px; } }
+
+.offers__blocks {
+  width: 100%;
+  height: 270px;
+  outline: 1px solid brown;
+  margin-top: 1%;
+  margin-right: 1%;
+  margin-left: 1%;
+  box-sizing: border-box; }
+  @media (min-width: 768px) {
+    .offers__blocks {
+      width: 23%;
+      margin-left: 1%;
+      margin-right: 1%;
+      height: 360px;
+      float: left;
+      display: inline-block; } }
 
 body {
   background-color: #fafaee; }

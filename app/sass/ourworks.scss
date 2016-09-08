@@ -1,0 +1,22 @@
+.ourworks{
+
+}
+.ourworks__inner{
+	@include container;
+}
+.ourworks__input{
+	display: none;
+}
+.ourworks__label{
+	display: inline-block;
+	width: 46%;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-top: 1%;
+	text-align: center;
+	outline: 1px dashed orange;
+	cursor: pointer;
+	@media #{$notebook-width}{
+		width: 200px;
+	}
+}
