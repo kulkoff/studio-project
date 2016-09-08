@@ -371,16 +371,53 @@ th {
 .header {
   background-color: #383838;
   height: 50px;
-  width: 340px;
-  margin: 0 auto; }
+  color: #fff; }
   @media (min-width: 768px) {
     .header {
+      height: 25px; } }
+
+.header__nav-wrap {
+  width: 340px;
+  margin: 0 auto;
+  position: relative; }
+  @media (min-width: 768px) {
+    .header__nav-wrap {
       width: 640px; } }
   @media (min-width: 1366px) {
-    .header {
+    .header__nav-wrap {
       width: 1040px; } }
   @media (min-width: 1920px) {
-    .header {
+    .header__nav-wrap {
+      width: 1600px; } }
+
+.logo {
+  position: absolute;
+  background-color: red; }
+  .logo--head-mobile {
+    left: 5px;
+    width: 23px;
+    height: 23px; }
+    @media (min-width: 768px) {
+      .logo--head-mobile {
+        display: none; } }
+
+.promo-title {
+  outline: 2px dashed green;
+  height: 50vh; }
+
+.promo-title__inner {
+  width: 340px;
+  margin: 0 auto;
+  height: 100%;
+  outline: 2px solid yellow; }
+  @media (min-width: 768px) {
+    .promo-title__inner {
+      width: 640px; } }
+  @media (min-width: 1366px) {
+    .promo-title__inner {
+      width: 1040px; } }
+  @media (min-width: 1920px) {
+    .promo-title__inner {
       width: 1600px; } }
 
 body {

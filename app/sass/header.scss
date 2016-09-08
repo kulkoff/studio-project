@@ -1,5 +1,33 @@
 .header{
 	background-color: $header-color;
 	height: 50px;
+	color: #fff;
+	@media #{$tablet-width}{
+		height: 25px;
+	}
+}
+.header__nav-wrap{
 	@include container;
+	position: relative;
+}
+.logo{
+	position: absolute;
+	background-color: red;
+	&--head-mobile{
+	 	left:5px;
+	 	width: 23px;
+	 	height: 23px;
+	 	@media #{$tablet-width}{
+	 		display: none;
+	 	}
+	 	}
+}
+.promo-title{
+	outline: 2px dashed green;
+	height: 50vh;
+}
+.promo-title__inner{
+	@include container;
+	height: 100%;
+	outline: 2px solid yellow;
 }
