@@ -2,6 +2,7 @@
 	background-color: $header-color;
 	height: 50px;
 	color: #fff;
+	font-family: $cl;
 	@media #{$tablet-width}{
 		height: 25px;
 	}
@@ -22,6 +23,58 @@
 	 	}
 	 }
 }
+.btn__row {
+	height: 2px;
+	width: 60%;
+	margin: 2px 0;
+	background-color: #1b8658;
+	position: relative;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+.btn__menu {
+	width: 50px;
+	height: 50px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	position: relative;
+  z-index: 5;
+  position: absolute;
+  right: 0;
+  &--active .btn__row:first-child {
+		-webkit-transform: rotate(-135deg);
+		-ms-transform: rotate(-135deg);
+		-o-transform: rotate(-135deg);
+		transform: rotate(-135deg);
+		top: 6px;
+	  background-color: #1b8658;
+	  opacity: 1;
+  }
+  &--active .btn__row:last-child {
+		-webkit-transform: rotate(-225deg);
+		-ms-transform: rotate(-225deg);
+		-o-transform: rotate(-225deg);
+		transform: rotate(-225deg);
+		top: -6px;
+	  background-color: #1b8658;
+	  opacity: 1;
+	}
+	&--active .btn__row{
+		&:nth-child(2) {
+			opacity: 0;
+		}
+	}
+}
+
+
 .promo-title{
 	outline: 2px dashed green;
 	height: 320px;

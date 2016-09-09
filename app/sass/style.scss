@@ -1,10 +1,9 @@
 @import "normalize.scss";
+@import "fonts.scss";
 @import "variables.scss";
+@import "scaffolding.scss";
 @import "mixins.scss";
 @import "header.scss";
 @import "about.scss";
 @import "ourworks.scss";
 @import "offers.scss";
-body{
-	background-color: $body-color;	
-}
