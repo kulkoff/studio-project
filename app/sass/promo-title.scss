@@ -1,0 +1,10 @@
+
+.promo-title{
+	
+	height: 320px;
+}
+.promo-title__inner{
+	@include container;
+	height: 200px;
+	outline: 2px solid yellow;
+}

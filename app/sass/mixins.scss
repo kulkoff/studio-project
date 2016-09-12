@@ -6,7 +6,7 @@
 	}
 }
 @mixin container(){
-	width: 340px;
+	width: 360px;
 	margin: 0 auto;
 		@media #{$tablet-width}{
 			width:640px;

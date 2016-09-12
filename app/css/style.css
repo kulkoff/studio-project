@@ -418,10 +418,10 @@ body {
   font-family: "CleanvertisingLight"; }
   @media (min-width: 768px) {
     .header {
-      height: 25px; } }
+      height: auto; } }
 
 .header__nav-wrap {
-  width: 340px;
+  width: 360px;
   margin: 0 auto;
   position: relative; }
   @media (min-width: 768px) {
@@ -433,6 +433,9 @@ body {
   @media (min-width: 1920px) {
     .header__nav-wrap {
       width: 1600px; } }
+  @media (min-width: 768px) {
+    .header__nav-wrap {
+      width: auto; } }
 
 .logo {
   position: absolute; }
@@ -470,7 +473,7 @@ body {
   position: relative;
   z-index: 5;
   position: absolute;
-  right: 0; }
+  right: 5px; }
   .btn__menu--active .btn__row:first-child {
     -webkit-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
@@ -495,6 +498,7 @@ body {
 
 .main-nav {
   background-color: #383838;
+  font-family: "ClearSansRegular";
   position: absolute;
   margin: 0;
   padding: 0;
@@ -505,33 +509,53 @@ body {
   transition: all 0.5s; }
   .main-nav--mobile-opened {
     height: 102px; }
+  @media (min-width: 768px) {
+    .main-nav {
+      position: relative;
+      height: auto;
+      top: 0; } }
 
 .main-nav__list {
   margin: 0;
-  padding: 15px; }
+  padding: 15px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .main-nav__list {
+      margin-left: 30%; } }
+  @media (min-width: 1366px) {
+    .main-nav__list {
+      margin-left: 50%; } }
 
 .main-nav__item {
-  list-style-type: none; }
-  .main-nav__item a {
-    color: #ffffff; }
-
-.promo-title {
-  height: 320px; }
-
-.promo-title__inner {
-  width: 340px;
-  margin: 0 auto;
-  height: 200px;
-  outline: 2px solid yellow; }
+  list-style-type: none;
+  margin-right: 0px; }
   @media (min-width: 768px) {
-    .promo-title__inner {
-      width: 640px; } }
+    .main-nav__item {
+      margin-right: 14px;
+      display: inline-block;
+      width: auto; } }
   @media (min-width: 1366px) {
-    .promo-title__inner {
-      width: 1040px; } }
-  @media (min-width: 1920px) {
-    .promo-title__inner {
-      width: 1600px; } }
+    .main-nav__item {
+      margin-right: 20px; } }
+  .main-nav__item a {
+    color: #ffffff;
+    text-decoration: none; }
+  @media (min-width: 768px) {
+    .main-nav__item--brief {
+      background-color: #edecd4;
+      margin-left: 25px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      border-radius: 5px; }
+      .main-nav__item--brief a {
+        color: #383838; } }
+  @media (min-width: 1366px) {
+    .main-nav__item--brief {
+      margin-left: 55px;
+      padding-left: 40px;
+      padding-right: 40px; } }
 
 .about {
   min-height: 400px;
@@ -548,7 +572,7 @@ body {
       display: block; } }
 
 .about__inner {
-  width: 340px;
+  width: 360px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .about__inner {
@@ -562,21 +586,118 @@ body {
 
 .about__block {
   width: 100%;
-  height: 270px;
-  outline: 1px solid #000;
+  min-height: 270px;
   margin-top: 1%;
   margin-right: 1%;
   margin-left: 1%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 15px;
+  padding-top: 40px; }
   @media (min-width: 768px) {
     .about__block {
       width: 48%;
-      height: 200px;
+      min-height: 200px;
       float: left;
       display: inline-block; } }
+  @media (min-width: 1366px) {
+    .about__block {
+      padding-right: 8%; } }
+
+.about__head {
+  color: #12adfd;
+  font-family: "ClearSansRegular";
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: underline;
+  position: relative;
+  display: block; }
+  .about__head:after {
+    content: '';
+    position: absolute;
+    top: -50px; }
+  .about__head--web:after {
+    background-image: url(../img/about/ico-pen.png);
+    width: 18px;
+    height: 29px;
+    left: 49%; }
+  .about__head--seo:after {
+    background-image: url(../img/about/ico-seo.png);
+    width: 43px;
+    height: 35px;
+    left: 45%; }
+  .about__head--market:after {
+    background-image: url(../img/about/ico-graph.png);
+    width: 55px;
+    height: 26px;
+    left: 44%; }
+  .about__head--analitycs:after {
+    background-image: url(../img/about/ico-gist.png);
+    width: 46px;
+    height: 26px;
+    left: 45%; }
+  @media (min-width: 1366px) {
+    .about__head {
+      font-size: 18px; }
+      .about__head:after {
+        top: -30px; }
+      .about__head--web:after {
+        left: 160px; }
+      .about__head--seo:after {
+        left: 190px; }
+      .about__head--market:after {
+        background-image: url(../img/about/ico-graph.png);
+        width: 55px;
+        height: 26px;
+        left: 255px; }
+      .about__head--analitycs:after {
+        background-image: url(../img/about/ico-gist.png);
+        width: 46px;
+        height: 26px;
+        left: 135px; } }
+  @media (min-width: 1920px) {
+    .about__head {
+      font-size: 20px; } }
+
+.about__content {
+  font-family: "CleanvertisingLight";
+  font-size: 14px;
+  color: #43433f; }
+  @media (min-width: 1366px) {
+    .about__content {
+      font-size: 16px; } }
+  @media (min-width: 1920px) {
+    .about__content {
+      font-size: 18px; } }
+
+.about__tags {
+  display: inline-block;
+  width: 48%;
+  color: #fff;
+  font-size: 11px;
+  font-family: "ClearSansRegular";
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #5ac5ff;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  margin-right: 1%; }
+  @media (min-width: 1366px) {
+    .about__tags {
+      width: auto;
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (min-width: 1920px) {
+    .about__tags {
+      font-size: 13px;
+      padding-left: 35px;
+      padding-right: 35px;
+      margin-right: 2%; } }
 
 .ourworks__inner {
-  width: 340px;
+  width: 360px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .ourworks__inner {
@@ -605,7 +726,7 @@ body {
       width: 200px; } }
 
 .offers__inner {
-  width: 340px;
+  width: 360px;
   margin: 0 auto; }
   @media (min-width: 768px) {
     .offers__inner {

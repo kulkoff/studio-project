@@ -19,18 +19,139 @@
 }
 .about__block{
 	width: 100%;
-	height: 270px;
-	outline: 1px solid #000;
+	min-height: 270px;
 	margin-top: 1%;
 	margin-right: 1%;
 	margin-left: 1%;
 	box-sizing:border-box;
+	padding: 15px;
+	padding-top: 40px;
 	@media #{$tablet-width}{
 		width: 48%;
-		height: 200px;
+		min-height: 200px;
 		float: left;
 		display: inline-block;
-
 	}
-
+	@media #{$notebook-width}{
+		padding-right: 8%;
+	}
+}
+.about__head{
+	color: #12adfd;
+	font-family: $csr;
+	text-transform: uppercase;
+	font-size: 16px;
+	text-decoration: underline;
+	position: relative;
+	display: block;
+	&:after{
+		content: '';
+		position: absolute;
+		top:-50px;
+	}
+	&--web{
+		&:after{
+			background-image: url(../img/about/ico-pen.png);
+			width: 18px;
+			height: 29px;
+			left: 49%;
+		}
+	}
+	&--seo{
+		&:after{
+			background-image: url(../img/about/ico-seo.png);
+			width: 43px;
+			height: 35px;
+			left: 45%;
+		}
+	}
+	&--market{
+		&:after{
+			background-image: url(../img/about/ico-graph.png);
+			width: 55px;
+			height: 26px;
+			left: 44%;
+		}
+	}
+	&--analitycs{
+		&:after{
+			background-image: url(../img/about/ico-gist.png);
+			width: 46px;
+			height: 26px;
+			left: 45%;
+		}
+	}
+	@media #{$notebook-width}{
+		font-size: 18px;
+		&:after{
+			top: -30px;
+		}
+		&--web{
+			&:after{
+				left: 160px;
+			}
+		}
+		&--seo{
+			&:after{
+				left: 190px;
+			}
+		}
+		&--market{
+			&:after{
+				background-image: url(../img/about/ico-graph.png);
+				width: 55px;
+				height: 26px;
+				left: 255px;
+			}
+		}
+		&--analitycs{
+			&:after{
+				background-image: url(../img/about/ico-gist.png);
+				width: 46px;
+				height: 26px;
+				left: 135px;
+			}
+		}
+	}
+	@media #{$fullhd-width}{
+		font-size: 20px;
+	}
+}
+.about__content{
+	font-family: $cl;
+	font-size: 14px;
+	color: $text-color;
+	@media #{$notebook-width}{
+		font-size: 16px;
+	}
+	@media #{$fullhd-width}{
+		font-size: 18px;
+	}
+}
+.about__tags{
+	display: inline-block;
+	width: 48%;
+	color: #fff;
+	font-size: 11px;
+	font-family: $csr;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: $blue-color;
+	text-align: center;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	margin-right: 1%;
+	@media #{$notebook-width}{
+		width: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	@media #{$fullhd-width}{
+		font-size: 13px;
+		padding-left: 35px;
+		padding-right: 35px;
+		margin-right: 2%;
+	}
 }

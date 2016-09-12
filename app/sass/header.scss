@@ -4,12 +4,15 @@
 	color: #fff;
 	font-family: $cl;
 	@media #{$tablet-width}{
-		height: 25px;
+		height: auto;
 	}
 }
 .header__nav-wrap{
 	@include container;
 	position: relative;
+	@media #{$tablet-width}{
+		width: auto;
+	}
 }
 .logo{
 	position: absolute;
@@ -48,7 +51,7 @@
 	position: relative;
   z-index: 5;
   position: absolute;
-  right: 0;
+  right: 5px;
   &--active .btn__row:first-child {
 		-webkit-transform: rotate(-135deg);
 		-ms-transform: rotate(-135deg);
@@ -78,6 +81,7 @@
 }
 .main-nav{
 	background-color: $header-color;
+	font-family: $csr;
 	position: absolute;
 	margin: 0;
 	padding: 0;
@@ -89,25 +93,57 @@
 	&--mobile-opened{
 		height: 102px;
 	}
+	@media #{$tablet-width}{
+		position: relative;
+		height: auto;
+		top:0;
+	}
+
 }
 .main-nav__list{
 	margin: 0;
 	padding: 15px;
+	text-transform: uppercase;
+	@media #{$tablet-width}{
+		margin-left: 30%;	
+	}@media #{$notebook-width}{
+		margin-left: 50%;	
+	}
+	
+
 }
 .main-nav__item{
 	list-style-type: none;
+	margin-right: 0px;
+	@media #{$tablet-width}{
+		margin-right: 14px;
+		display: inline-block;
+		width: auto;
+	}
+	@media #{$notebook-width}{
+		margin-right: 20px;
+	}
 	a{
 		color: #ffffff;	
+		text-decoration: none;
 	}
-}
-
-
-.promo-title{
-	
-	height: 320px;
-}
-.promo-title__inner{
-	@include container;
-	height: 200px;
-	outline: 2px solid yellow;
+	&--brief{
+		@media #{$tablet-width}{
+			background-color: #edecd4;
+			margin-left: 25px;
+	    padding-left: 30px;
+	    padding-right: 30px;
+	    padding-top: 3px;
+	    padding-bottom: 3px;
+	    border-radius: 5px;
+			a{
+			color: $header-color;
+			}
+		}
+		@media #{$notebook-width}{
+			margin-left: 55px;
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+	}
 }
