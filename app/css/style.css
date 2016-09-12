@@ -696,6 +696,9 @@ body {
       padding-right: 35px;
       margin-right: 2%; } }
 
+.ourworks {
+  min-height: 500px; }
+
 .ourworks__inner {
   width: 360px;
   margin: 0 auto; }
@@ -708,6 +711,16 @@ body {
   @media (min-width: 1920px) {
     .ourworks__inner {
       width: 1600px; } }
+
+.ourworks__tabs {
+  min-width: 360px;
+  width: 360px;
+  text-align: center;
+  text-decoration: none;
+  color: #43433f;
+  background-color: #f2f2f2;
+  position: relative;
+  padding-top: 70px; }
 
 .ourworks__input {
   display: none; }
@@ -724,6 +737,33 @@ body {
   @media (min-width: 1366px) {
     .ourworks__label {
       width: 200px; } }
+
+.slider__owl-carousel {
+  height: 300px;
+  background-color: #5ac5ff; }
+
+#tab1:checked ~ #content1.ourworks__content,
+#tab2:checked ~ #content2.ourworks__content,
+#tab3:checked ~ #content3.ourworks__content,
+#tab4:checked ~ #content4.ourworks__content {
+  opacity: 1; }
+
+#tab1:checked ~ #content1.ourworks__content {
+  z-index: 2; }
+
+#tab2:checked ~ #content2.ourworks__content {
+  z-index: 2; }
+
+#tab3:checked ~ #content3.ourworks__content {
+  z-index: 2; }
+
+#tab4:checked ~ #content4.ourworks__content {
+  z-index: 2; }
+
+.ourworks__content {
+  opacity: 0;
+  position: absolute;
+  width: 100%; }
 
 .offers__inner {
   width: 360px;
