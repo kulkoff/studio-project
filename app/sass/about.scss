@@ -39,22 +39,38 @@
 		&--web, &--market{
 			padding-right: 5%;
 		}
-		&--web{
+		&--web,&--analitycs{
 			&:after, &:before{
 				position: absolute;
 				content: '';
-				background-color: $text-color;
+				background-color: #e7e5e4;
 			}
+		}
+		&--web{
 			&:before{
-				top: 100px;
-				bottom: 20px;
+				top: 70px;
+				bottom: 105px;
 				right: -1px;
 				width: 1px;
 			}
 			&:after{
-				left: 100px;
+				left: 75px;
 				bottom: 0px;
-				right: 20px;
+				right: 200px;
+				height: 1px;
+			}
+		}
+		&--analitycs{
+			&:before{
+				top: 105px;
+				bottom: 70px;
+				left: 1px;
+				width: 1px;
+			}
+			&:after{
+				left: 200px;
+				top: 0px;
+				right: 75px;
 				height: 1px;
 			}
 		}
@@ -182,8 +198,8 @@
 	text-decoration: none;
 	background-color: $blue-color;
 	text-align: center;
-	padding-top: 3px;
-	padding-bottom: 4px;
+	padding-top: 4px;
+	padding-bottom: 5px;
 	border-radius: 4px;
 	margin-bottom: 10px;
 	margin-right: 1%;
