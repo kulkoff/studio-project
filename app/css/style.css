@@ -421,18 +421,19 @@ body {
       height: auto; } }
 
 .header__nav-wrap {
-  width: 360px;
+  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
+  /**@media (min-width: 1300px){
+			width: 1040px;
+		}
+		@media (min-width: 1600px){
+			width: 1600px;
+		}**/
   position: relative; }
   @media (min-width: 768px) {
     .header__nav-wrap {
-      width: 740px; } }
-  @media (min-width: 1300px) {
-    .header__nav-wrap {
-      width: 1040px; } }
-  @media (min-width: 1600px) {
-    .header__nav-wrap {
-      width: 1600px; } }
+      width: 80vw; } }
   @media (min-width: 768px) {
     .header__nav-wrap {
       width: auto; } }
@@ -562,43 +563,78 @@ body {
   position: relative; }
 
 .logo--about-dekstop {
-  left: 48%;
-  top: 48%;
-  width: 50px;
-  height: 50px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 134px;
+  height: 136px;
+  background-image: url(../img/about/logo-dekstop.png);
   display: none; }
   @media (min-width: 768px) {
     .logo--about-dekstop {
-      display: block; } }
+      display: block;
+      z-index: 2; } }
 
 .about__inner {
-  width: 360px;
-  margin: 0 auto; }
+  width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
+  /**@media (min-width: 1300px){
+			width: 1040px;
+		}
+		@media (min-width: 1600px){
+			width: 1600px;
+		}**/
+  position: relative; }
   @media (min-width: 768px) {
     .about__inner {
-      width: 740px; } }
-  @media (min-width: 1300px) {
-    .about__inner {
-      width: 1040px; } }
-  @media (min-width: 1600px) {
-    .about__inner {
-      width: 1600px; } }
+      width: 80vw; } }
+  .about__inner::after {
+    content: '';
+    display: table;
+    clear: both; }
 
 .about__block {
   width: 100%;
   min-height: 270px;
   box-sizing: border-box;
-  padding: 15px;
   padding-top: 40px; }
   @media (min-width: 768px) {
     .about__block {
       width: 50%;
       min-height: 200px;
       float: left;
-      display: inline-block; } }
+      display: inline-block;
+      position: relative; }
+      .about__block--web, .about__block--market {
+        padding-right: 5%; }
+      .about__block--web:after, .about__block--web:before {
+        position: absolute;
+        content: '';
+        background-color: #43433f; }
+      .about__block--web:before {
+        top: 100px;
+        bottom: 20px;
+        right: -1px;
+        width: 1px; }
+      .about__block--web:after {
+        left: 100px;
+        bottom: 0px;
+        right: 20px;
+        height: 1px; }
+      .about__block--seo, .about__block--web {
+        padding-bottom: 60px; }
+      .about__block--market, .about__block--analitycs {
+        padding-bottom: 64px; }
+      .about__block--seo, .about__block--analitycs {
+        padding-left: 5%; } }
   @media (min-width: 1300px) {
-    .about__block {
-      padding-right: 8%; } }
+    .about__block--web, .about__block--market {
+      padding-right: 8%; }
+    .about__block--seo, .about__block--analitycs {
+      padding-left: 8%; } }
 
 .about__head {
   color: #12adfd;
@@ -658,13 +694,15 @@ body {
 .about__content {
   font-family: "CleanvertisingLight";
   font-size: 14px;
+  line-height: 21px;
   color: #43433f; }
   @media (min-width: 1300px) {
     .about__content {
-      font-size: 16px; } }
+      font-size: 18px;
+      line-height: 24px; } }
   @media (min-width: 1600px) {
     .about__content {
-      font-size: 18px; } }
+      font-size: 20px; } }
 
 .about__tags {
   display: inline-block;
@@ -697,17 +735,18 @@ body {
   min-height: 500px; }
 
 .ourworks__inner {
-  width: 360px;
-  margin: 0 auto; }
+  width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
+  /**@media (min-width: 1300px){
+			width: 1040px;
+		}
+		@media (min-width: 1600px){
+			width: 1600px;
+		}**/ }
   @media (min-width: 768px) {
     .ourworks__inner {
-      width: 740px; } }
-  @media (min-width: 1300px) {
-    .ourworks__inner {
-      width: 1040px; } }
-  @media (min-width: 1600px) {
-    .ourworks__inner {
-      width: 1600px; } }
+      width: 80vw; } }
 
 .ourworks__tabs {
   min-width: 360px;
@@ -763,17 +802,18 @@ body {
   width: 100%; }
 
 .offers__inner {
-  width: 360px;
-  margin: 0 auto; }
+  width: 320px;
+  min-width: 320px;
+  margin: 0 auto;
+  /**@media (min-width: 1300px){
+			width: 1040px;
+		}
+		@media (min-width: 1600px){
+			width: 1600px;
+		}**/ }
   @media (min-width: 768px) {
     .offers__inner {
-      width: 740px; } }
-  @media (min-width: 1300px) {
-    .offers__inner {
-      width: 1040px; } }
-  @media (min-width: 1600px) {
-    .offers__inner {
-      width: 1600px; } }
+      width: 80vw; } }
 
 .offers__blocks {
   width: 100%;
