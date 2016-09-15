@@ -74,66 +74,82 @@
 			<div class="ourworks__tabs">
 				<input class="ourworks__input" id="tab1" type="radio" name="tabs" checked>
 				<label class="ourworks__label" for="tab1" title="Разработка сайтов">Разработка сайтов</label>
-
 				<input class="ourworks__input" id="tab2" type="radio" name="tabs">
-				<label class="ourworks__label" for="tab2" title="SEO оптимизация">SEO оптимизация</label>
-
+				<label class="ourworks__label ourworks__label--seo" for="tab2" title="SEO оптимизация">SEO оптимизация</label>
 				<input class="ourworks__input" id="tab3" type="radio" name="tabs">
 				<label class="ourworks__label" for="tab3" title="Контекстная реклама">Контекстная реклама</label>
-
 				<input class="ourworks__input" id="tab4" type="radio" name="tabs">
-				<label class="ourworks__label" for="tab4" title="Посадочные страницы">Посадочные страницы</label>
-
+				<label class="ourworks__label ourworks__label--land" for="tab4" title="Посадочные страницы">Посадочные страницы</label>
 				<div class="ourworks__content ourworks__content--develop" id="content1">
-					<div class="slider__wrap owl-carousel">
-						
+					<div class="controls">
+						<a href="#zero">Test 1</a>
+						<a href="#one">Test 2</a>
+					</div>
+					<div class="slider__wrap owl-carousel">					
 						<div class="slider__owl-carousel item" data-hash="zero">
 							<div class="slider__desc">
-								1
+								<h4 class="desc__head">Заказчик</h4>
+								<p class="desc__text">оконные системы Teplowin</p>	
+								<h4 class="desc__head">Сфера деятельности</h4>
+								<p class="desc__text">Производство и оптовая продажа пластиковых окон.
+									Один из крупнейших заводов пвх констукций в 
+									Уральском регионе.</p>	
+									<h4 class="desc__head">Задача</h4>
+									<p class="desc__text">Поднять продажи</p>	
+								</div>
+								<div class="slider__link"><a href="#">www.ekbokno.ru</a></div>
+								<div class="slider__img slider__img--develop">
+									<picture>
+										<source media="(max-width:768px)" srcset="img/dev-mobile-item1.png">
+											<img src="img/dev-desktop-item1.png" alt="">
+										</picture>
+									</div>
+									<a class="slider__more-btn">
+										Подробнее о проекте
+									</a>	
+								</div>
+					
+								<div class="slider__owl-carousel item" data-hash="one">
+									<div class="slider__desc">
+										<img src="img/DSC_0003.JPG" alt="">
+									</div>
+									<div class="slider__img slider__img--develop">	
+									</div>
+								</div>	
 							</div>
-							<div class="slider__img slider__img--develop">	
-							</div>
-						</div>							
-						<div class="slider__owl-carousel item" data-hash="one">
-							<div class="slider__desc">
-								2
-							</div>
-							<div class="slider__img slider__img--develop">	
-							</div>
-						</div>	
-					</div>
-				</div>
-				<a href="#zero">Test 1</a>
-				<a href="#one">Test 2</a>
-				<div class="ourworks__content ourworks__content--seo" id="content2">
-					<div class="slider__wrap">
-						<nav class="slider__nav">
-							<ul class="slider__list">
-								<li class="slider__item"><a href=""></a></li>
-								<li class="slider__item"><a href=""></a></li>
-								<li class="slider__item"><a href=""></a></li>
-								<li class="slider__item"><a href=""></a></li>
-							</ul>
-						</nav>
-						<div class="slider__desc">
-							
+							<div class="slider__head-controls">Проекты можно листать</div>
 						</div>
-						<div class="slider__img slider__img--develop">
-							
+
+						<div class="ourworks__content ourworks__content--seo" id="content2">
+							<div class="slider__wrap">
+								<nav class="slider__nav">
+									<ul class="slider__list">
+										<li class="slider__item"><a href=""></a></li>
+										<li class="slider__item"><a href=""></a></li>
+										<li class="slider__item"><a href=""></a></li>
+										<li class="slider__item"><a href=""></a></li>
+									</ul>
+								</nav>
+								<div class="slider__desc">
+									
+								</div>
+								<div class="slider__img slider__img--develop">
+									
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+				</div>				
 			</section>
-			<section class="offers">
-				<div class="offers__inner">
-					<div class="offers__blocks"></div>
-					<div class="offers__blocks"></div>
-					<div class="offers__blocks"></div>
-					<div class="offers__blocks"></div>	
-				</div>
-			</section>
-			</div>
+
+	<section class="offers">
+		<div class="offers__inner">
+			<div class="offers__blocks"></div>
+			<div class="offers__blocks"></div>
+			<div class="offers__blocks"></div>
+			<div class="offers__blocks"></div>	
 		</div>
+	</section>
 
 	<script src="libs/jquery/jquery-1.11.1.min.js"></script>
 	<script src="libs/owl.carousel/owl.carousel.js"></script>

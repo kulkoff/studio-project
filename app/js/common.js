@@ -8,9 +8,11 @@ $(document).ready(function() {
     //Карусель
     $('.owl-carousel').owlCarousel({
         items:1,
-        loop:true,
+        loop:false,
         center:true,
+        nav:true,
         margin:10,
+        lazyLoad: true,
         URLhashListener:true,
         autoplayHoverPause:true,
         startPosition: 'URLHash'

@@ -11,7 +11,7 @@
 		margin: auto;
 		width: 134px;
 		height: 136px;
-		background-image: url(../img/about/logo-dekstop.png);
+		background-image: url(../img/logo-dekstop.png);
 		display: none;
 		@media #{$tablet-width}{
 	 	display: block;
@@ -109,7 +109,7 @@
 	}
 	&--web{
 		&:after{
-			background-image: url(../img/about/ico-pen.png);
+			background-image: url(../img/ico-pen.png);
 			width: 18px;
 			height: 29px;
 			left: 49%;
@@ -117,7 +117,7 @@
 	}
 	&--seo{
 		&:after{
-			background-image: url(../img/about/ico-seo.png);
+			background-image: url(../img/ico-seo.png);
 			width: 43px;
 			height: 35px;
 			left: 45%;
@@ -125,7 +125,7 @@
 	}
 	&--market{
 		&:after{
-			background-image: url(../img/about/ico-graph.png);
+			background-image: url(../img/ico-graph.png);
 			width: 55px;
 			height: 26px;
 			left: 44%;
@@ -133,7 +133,7 @@
 	}
 	&--analitycs{
 		&:after{
-			background-image: url(../img/about/ico-gist.png);
+			background-image: url(../img/ico-gist.png);
 			width: 46px;
 			height: 26px;
 			left: 45%;
@@ -156,7 +156,7 @@
 		}
 		&--market{
 			&:after{
-				background-image: url(../img/about/ico-graph.png);
+				background-image: url(../img/ico-graph.png);
 				width: 55px;
 				height: 26px;
 				left: 255px;
@@ -164,7 +164,7 @@
 		}
 		&--analitycs{
 			&:after{
-				background-image: url(../img/about/ico-gist.png);
+				background-image: url(../img/ico-gist.png);
 				width: 46px;
 				height: 26px;
 				left: 135px;
