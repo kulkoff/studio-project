@@ -192,7 +192,7 @@
 	display: inline-block;
 	width: 48%;
 	color: #fff;
-	font-size: 11px;
+	font-size: 10px;
 	font-family: $csr;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -207,6 +207,7 @@
 		width: auto;
 		padding-left: 20px;
 		padding-right: 20px;
+		font-size: 11px;
 	}
 	@media #{$fullhd-width}{
 		font-size: 13px;

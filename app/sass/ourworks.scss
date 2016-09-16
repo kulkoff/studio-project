@@ -1,6 +1,11 @@
 .ourworks{
 	min-height: 800px;
-	@include clearfix;
+	@media #{$tablet-width}{
+		min-height: 600px;
+	}
+	@media #{$notebook-width}{
+		min-height: 750px;
+	}
 }
 .ourworks__inner{
 	@include container;
@@ -11,6 +16,12 @@
 	font-weight: normal;
 	font-size: 18px;
 	text-transform: uppercase;
+	@media #{$tablet-width}{
+		font-size: 28px;
+	}
+	@media #{$notebook-width}{
+		font-size: 48px;
+	}
 }
 .ourworks__tabs {
 	min-width: 320px;
@@ -21,7 +32,6 @@
 	position: relative;
 	@media #{$tablet-width}{
 		text-align: left;
-
 	}
 }
 .ourworks__input{
@@ -42,7 +52,7 @@
 	padding-bottom: 12px;
 	padding-top: 12px;
 	font-family: $csr;
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: bold;
 	&--seo{
 		margin-right: 0;
@@ -51,13 +61,17 @@
 		margin-right: 0;
 	}
 	@media #{$tablet-width}{
-		width: 148px;
-		margin-right: 3px;
+		width: 149px;
+		margin-right: 1px;
+		&--land{
+		margin-right: 0;
+	}
 
 	}
 	@media #{$notebook-width}{
 		width: 200px;
 		margin-right: 1.2%;
+		font-size: 18px;
 	}
 }
 #tab1:checked ~ #content1.ourworks__content,
@@ -84,11 +98,32 @@
 	position: absolute;
 	width: 100%;
 }
-.slider__owl-carousel{
+.ourworks__controls{
+	@media #{$notebook-width}{
+	margin-top: 10px;
+	margin-bottom: 40px;
+	}
+	a{
+		display: inline-block;
+		margin-right: 20px;
+		color: $blue-color;
+		font-family: $csr;
+		font-size: 16px;
+	}
+}
 
+.slider__owl-carousel{
 }
 .slider__desc{
 	padding-top: 30px;
+	@media #{$tablet-width}{
+		float:left;
+		width: 35%;
+	}
+	@media #{$notebook-width}{
+		float:left;
+		width: 30%;
+	}
 }
 .desc__head{
 	margin: 0;
@@ -99,6 +134,9 @@
 	font-weight: bold;
 	color: $head-color;
 	font-size: 16px;
+	@media #{$notebook-width}{
+		font-size: 18px;
+	}
 }
 .desc__text{
 	text-align: left;
@@ -107,19 +145,59 @@
 	font-size: 14px;
 	margin-top: 5px;
 	margin-bottom: 5px;
+	@media #{$notebook-width}{
+		font-size: 16px;
+		line-height: 20px;
+	}
 }
 .slider__link{
 	display: none;
+	position: absolute;
+	height: 30px;
+	@media #{$notebook-width}{
+		font-size: 18px;
+		display: block;
+		right: 22%;
+		top: -0px;
+		a{
+			color: $blue-color;
+			font-family: $csr;
+			font-size: 14px;
+			text-decoration: underline;
+			display: block;
+			padding-right: 20px;
+
+			&:after{
+				content: '';
+				background-image: url(../img/link-ico.png);
+				width: 14px;
+				height: 14px;
+				position: absolute;
+				right: 0;
+				top: 0px;
+			}
+		}
+	}
 }
 .slider__img{
 	margin-top: 30px;
-	margin-bottom: 30px;
-	max-width: 737px;
+	margin-bottom: 60px;
+	@media #{$tablet-width}{
+		max-width: 737px;
+		width: 65%;
+		float: left;
+	}
+	@media #{$notebook-width}{
+		width: 70%;
+	}
 }
 .slider__more-btn{
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: -0px;
 	display: block;
 	width: 180px;
-	margin: 0 auto;
 	background-color: $btn-red;
 	color: #fff;
 	padding-top: 13px;
@@ -128,6 +206,18 @@
 	font-family: $csr;
 	font-size: 14px;
 	cursor: pointer;
+	@media #{$tablet-width}{
+		position: static;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	@media #{$notebook-width}{
+		background-color: #c4c4ae;
+		font-size: 18px;
+		width: 215px;
+		margin-top: 80px;
+		color: #000;
+	}
 }
 .slider__head-controls{
 	margin-top: 30px;
@@ -135,24 +225,52 @@
 	color: $mid-yellow;
 	font-family: $csr;
 	font-size: 14px;
+	&--mobile{
+		@media #{$tablet-width}{
+			display: none;
+		}
+	}
 }
-.owl-controls{
-	position: relative;
+.slider__head-controls--desktop{
+	display: none;
+	@media #{$tablet-width}{
+		display: block;
+		margin-top: 0px;
+		text-align: right;
+		margin-right: 125px;
+		position: absolute;
+		right: 0px;
+		bottom: 10px;
+		font-size: 18px;
+	}
+	@media #{$notebook-width}{
+		right: 100px;
+	}
 }
 .owl-next, .owl-prev{
 	position: absolute;
 	content: '';
+	bottom: -45px;
 	text-indent: -99999px;
-	top: 37px;
+	@media #{$tablet-width}{
+		bottom: 12px;
+	}
 }
 .owl-prev{
 	background-image: url(../img/btn-prev.png);
 	width: 37px;
 	height: 7px;
+	@media #{$tablet-width}{
+		background-image: none;
+	}
 }
 .owl-next{
 	width: 37px;
 	height: 9px;
 	background-image: url(../img/btn-next.png);
 	right: 0;
+	@media #{$notebook-width}{
+		right: 120px;
+		bottom: 16px;
+	}
 }

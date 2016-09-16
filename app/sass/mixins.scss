@@ -10,6 +10,7 @@
 	min-width: 320px;
 	margin: 0 auto;
 		@media #{$tablet-width}{
+			min-width: 80vw;
 			width:80vw;
 		}
 		/**@media #{$notebook-width}{
@@ -18,4 +19,9 @@
 		@media #{$fullhd-width}{
 			width: 1600px;
 		}**/
+}
+@mixin container-slider(){
+	min-width: 85vw;
+	width: 85vw;
+	margin: 0 auto;
 }
