@@ -1,3 +1,16 @@
 body{
 	background-color: $body-color;	
 }
+h2{
+	color: $head-color;
+	font-family: $cb;
+	font-weight: normal;
+	font-size: 18px;
+	text-transform: uppercase;
+	@media #{$tablet-width}{
+		font-size: 28px;
+	}
+	@media #{$notebook-width}{
+		font-size: 48px;
+	}
+}
