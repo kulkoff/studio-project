@@ -5,33 +5,146 @@
 	@include container;
 }
 .offers__blocks{
-	width: 100%;
-	min-height: 270px;
-	margin-top: 1%;
-	margin-right: 1%;
-	margin-left: 1%;
+	width: 85%;
+	margin: 0 auto;
+	margin-top: 30px;
 	box-sizing:border-box;
 	@media #{$tablet-width}{
-		width: 23%;
+		width: 48%;
 		margin-left: 1%;
 		margin-right: 1%;
-		height: 360px;
 		float: left;
 		display: inline-block;
 	}
+	@media #{$notebook-width}{
+		width: 23%;
+	}
 }
 .offer__head{
-	background-color: #efefc2;
+	background-color: $light-yellow;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	h4{
 		font-size: 14px;
 		font-family: $csb;
 		text-transform: uppercase;
 		text-align: center;
+		margin-bottom: 5px;
+		margin-top: 5px;
+		@media #{$tablet-width}{
+			font-size: 16px;
+		}
+		@media #{$notebook-width}{
+			font-size: 18px;
+		}
 	}
 }
 .offer__shower{
-
+	position: relative;
+	&:after{
+		content: '';
+		position: absolute;
+		width: 18px;
+		height: 9px;
+		right: -120px;
+		top: 4px;
+	}
+	&--closed{
+		&:after{
+			background-image: url(../img/show-ico.png);
+		}
+	}
 	&--opened{
 		display: none;
+		&:after{
+			background-image: url(../img/hide-ico.png);
+		}
 	}
+}
+.offer__price{
+	
+	&--desktop{
+		display: none;
+		@media #{$tablet-width}{
+			display: block;
+			text-align: center;
+			font-size: 16px;
+			padding-bottom: 5px;
+		}	
+		@media #{$notebook-width}{
+			font-size: 18px;
+		}
+	}
+}
+.offer__more{
+	display: block;
+	width: 100%;
+	text-align: center;
+	border: 0;
+	color: $mid-yellow;
+	background-color: $light-yellow;
+	font-family: $csr;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 0;
+	@media #{$tablet-width}{
+			display: none;
+	}
+}
+.offer__main{
+	background-color: $dark-yellow;
+}
+.offer__price{
+	font-family: $csb;
+	line-height: 1;
+	text-align: center;
+	margin: 0;	
+  &--mobile{
+  	color: #fff;
+  	line-height: 45px;
+  	height: 45px;
+  	@media #{$tablet-width}{
+			display: none;
+  	}
+  }
+}
+.offer__list{
+	overflow: hidden;
+	height: 0;
+	transition: all .25s;
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+	text-transform: uppercase;
+	font-family: $csm;
+	font-size: 12px;
+	line-height: 1.8;
+	color: #fff;
+	&--active{
+		height: 160px;
+	}
+	@media #{$tablet-width}{
+		height: auto;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		font-family: $csr;
+		font-size: 14px;
+	}
+	@media #{$notebook-width}{
+		font-size: 16px;
+	}
+}
+.offer__accept{
+	display: block;
+	width: 100%;
+	border: 0;
+	background-color: $btn-red;
+	color: #fff;
+	height: 45px;
+	font-family: $csb;
+	font-size: 14px;
+	text-transform: uppercase;
 }

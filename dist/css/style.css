@@ -411,6 +411,19 @@ th {
 body {
   background-color: #fafaee; }
 
+h2 {
+  color: #222222;
+  font-family: "CleanvertisingBlack";
+  font-weight: normal;
+  font-size: 18px;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 28px; } }
+  @media (min-width: 1300px) {
+    h2 {
+      font-size: 48px; } }
+
 .header {
   background-color: #383838;
   height: 50px;
@@ -1034,18 +1047,133 @@ body {
       width: 80vw; } }
 
 .offers__blocks {
-  width: 100%;
-  height: 270px;
-  outline: 1px solid brown;
-  margin-top: 1%;
-  margin-right: 1%;
-  margin-left: 1%;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 30px;
   box-sizing: border-box; }
   @media (min-width: 768px) {
     .offers__blocks {
-      width: 23%;
+      width: 48%;
       margin-left: 1%;
       margin-right: 1%;
-      height: 360px;
       float: left;
       display: inline-block; } }
+  @media (min-width: 1300px) {
+    .offers__blocks {
+      width: 23%; } }
+
+.offer__head {
+  background-color: #efefc2;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .offer__head h4 {
+    font-size: 14px;
+    font-family: "ClearSansBold";
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px; }
+    @media (min-width: 768px) {
+      .offer__head h4 {
+        font-size: 16px; } }
+    @media (min-width: 1300px) {
+      .offer__head h4 {
+        font-size: 18px; } }
+
+.offer__shower {
+  position: relative; }
+  .offer__shower:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 9px;
+    right: -120px;
+    top: 4px; }
+  .offer__shower--closed:after {
+    background-image: url(../img/show-ico.png); }
+  .offer__shower--opened {
+    display: none; }
+    .offer__shower--opened:after {
+      background-image: url(../img/hide-ico.png); }
+
+.offer__price--desktop {
+  display: none; }
+  @media (min-width: 768px) {
+    .offer__price--desktop {
+      display: block;
+      text-align: center;
+      font-size: 16px;
+      padding-bottom: 5px; } }
+  @media (min-width: 1300px) {
+    .offer__price--desktop {
+      font-size: 18px; } }
+
+.offer__more {
+  display: block;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  color: #afaf91;
+  background-color: #efefc2;
+  font-family: "ClearSansRegular";
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 0; }
+  @media (min-width: 768px) {
+    .offer__more {
+      display: none; } }
+
+.offer__main {
+  background-color: #d3d396; }
+
+.offer__price {
+  font-family: "ClearSansBold";
+  line-height: 1;
+  text-align: center;
+  margin: 0; }
+  .offer__price--mobile {
+    color: #fff;
+    line-height: 45px;
+    height: 45px; }
+    @media (min-width: 768px) {
+      .offer__price--mobile {
+        display: none; } }
+
+.offer__list {
+  overflow: hidden;
+  height: 0;
+  transition: all .25s;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  text-transform: uppercase;
+  font-family: "ClearSansMedium";
+  font-size: 12px;
+  line-height: 1.8;
+  color: #fff; }
+  .offer__list--active {
+    height: 160px; }
+  @media (min-width: 768px) {
+    .offer__list {
+      height: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      font-family: "ClearSansRegular";
+      font-size: 14px; } }
+  @media (min-width: 1300px) {
+    .offer__list {
+      font-size: 16px; } }
+
+.offer__accept {
+  display: block;
+  width: 100%;
+  border: 0;
+  background-color: #de757f;
+  color: #fff;
+  height: 45px;
+  font-family: "ClearSansBold";
+  font-size: 14px;
+  text-transform: uppercase; }
